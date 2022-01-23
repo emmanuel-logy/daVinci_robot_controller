@@ -1,36 +1,5 @@
 # dVRK PSM - Kinematics & Dynamics
 
-## Overview
-#### Introduction
-This project is based on the da Vinci Reasearch Kit (dVRK), an open-source surgical robotic platform. The aim of this project is to derive the complete dynamic model for the Patient Side Manipulator (PSM) of the dVRK and then calculate the inverse dynamics of the system to move it from a given start pose to a goal pose. Further, to verify the dynamic model and the calculated inverse dynamics, our model was used to simulate the PSM on the Asynchronous Multi-Body Framework (AMBF), developed by the AIM lab at WPI.
-
-<figure>
-    <img src="media/1_dVRK.png" height="240" width="340">
-    <figcaption><i>The daVinci Research Kit (dVRK) </i></figcaption>
-</figure>
-
-The schematic of the PSM and simplified model used for assigning the joint frames and link frames for carrying out our analysis is shown below:
-
-<p float="left">
-  <img src="media/2_PSM_schematic.png" height="240" width="580" />
-  <img src="media/2_PSM_model.jpeg" height="240" width="360" /> 
-</p>
-
-> fig1: The Patient Side Manipulator (PSM) 	<br>
-> fig2: The schematic of the PSM 			<br>
-> fig3: The simplified model of the PSM	 	<br> <br>
-
-
-#### Contributions
-This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. The team was comprised of 4 people and our contributions are described below:
-- Emmanuel Jayaraju	: formal analysis, matlab development, python script development
-- Aditya Mehrotra	: formal analysis, matlab development, inertia generation on blender
-- Ritwik Pandey		: formal analysis, matlab development
-- Haoying Zhou		: formal analysis, matlab development, python script development, conceptualization
-
-
-
----
 ## Demo 1 - Position Control of a single PSM in AMBF simulator
 <figure>
     <img src="media/3_demo_IK_ambf.gi" height="360" width="672">
@@ -66,16 +35,55 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 
 
 
+
+---
+## Overview
+#### Introduction
+This project is based on the da Vinci Reasearch Kit (dVRK), an open-source surgical robotic platform. The aim of this project is to derive the complete dynamic model for the Patient Side Manipulator (PSM) of the dVRK and then calculate the inverse dynamics of the system to move it from a given start pose to a goal pose. Further, to verify the dynamic model and the calculated inverse dynamics, our model was used to simulate the PSM on the Asynchronous Multi-Body Framework (AMBF), developed by the AIM lab at WPI.
+
+<figure>
+    <img src="media/1_dVRK.png" height="240" width="340">
+    <figcaption><i>The daVinci Research Kit (dVRK) </i></figcaption>
+</figure>
+
+The schematic of the PSM and simplified model used for assigning the joint frames and link frames for carrying out our analysis is shown below:
+
+<p float="left">
+  <img src="media/2_PSM_schematic.png" height="240" width="580" />
+  <img src="media/2_PSM_model.jpeg" height="240" width="360" /> 
+</p>
+
+> fig1: The Patient Side Manipulator (PSM) 	<br>
+> fig2: The schematic of the PSM 			<br>
+> fig3: The simplified model of the PSM	 	<br> <br>
+
+
+#### Contributions
+This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. The team was comprised of 4 people and our contributions are described below:
+- Emmanuel Jayaraju	: formal analysis, matlab development, python script development
+- Aditya Mehrotra	: formal analysis, matlab development, inertia generation on blender
+- Ritwik Pandey		: formal analysis, matlab development
+- Haoying Zhou		: formal analysis, matlab development, python script development, conceptualization
+
+
+
+
+<br><br>
 ---
 ## Scripts 
 
 1. Python
+
 `psm_ambf.py` : Code for simplified model, having inverse kinematics control.
+
 `psm_full.py` : Code for full model, having inverse kinematics control.
 
 2. MATLAB
+
 `dVRK_FKIK_ambf.m` : Code for calculating inverse kinematics of simplified model, generate a csv file recording the joint variables and path coordinates.
+
 `dVRK_FKIK_full.m` : Code for calculating inverse kinematics of full model, generate a csv file recording the joint variables and path coordinates.
+
 `ModelDynamics.m`  : Code for calculating inverse dynamics of simplified model, generate a csv file recording the joint variables and path coordinates.
 
 
@@ -134,24 +142,13 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 
 It is our plan to port all our work from MATLAB to C++ to perform torque control of the PSM on AMBF simulator. We plan to remove the dependency on MATLAB for dynamics computations and use the **Rigid Body Dynamics Library (RBDL)** C++ open source library to compute the dynamics. The link for this library is [https://github.com/ORB-HD/rbdl-orb](https://github.com/ORB-HD/rbdl-orb). 
 
-  
-  
-  
-  
-<br><br>
+
 ---
 ## Reference
 
-For more information regarding this work, please refer to the report here:
-<object data="media/FinalReport.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="media/FinalReport.pdf" />
-</object>
+For more information regarding this work, please refer to the report named, "FinalReport.pdf" in the media folder.
 
 
-
-
-
-<br><br>
 ---
 
 
