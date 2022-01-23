@@ -1,5 +1,30 @@
 # dVRK PSM - Kinematics & Dynamics
 
+## Overview
+#### Introduction
+This project is based on the da Vinci Reasearch Kit (dVRK), an open-source surgical robotic platform. The aim of this project is to derive the complete dynamic model for the Patient Side Manipulator (PSM) of the dVRK and then calculate the inverse dynamics of the system to move it from a given start pose to a goal pose. Further, to verify the dynamic model and the calculated inverse dynamics, our model was used to simulate the PSM on the Asynchronous Multi-Body Framework (AMBF), developed by the AIM lab at WPI.
+
+<figure>
+    <img src="media/1_dVRK.png" height="240" width="320">
+</figure>
+
+> fig1: The daVinci Research Kit (dVRK)		<br>
+
+<br>
+The schematic of the PSM and simplified model used for assigning the joint frames and link frames for carrying out our analysis is shown below:
+
+<p float="left">
+  <img src="media/2_PSM_schematic.png" height="180" width="430" />
+  <img src="media/2_PSM_model.jpeg" height="180" width="270" /> 
+</p>
+
+> fig1: The Patient Side Manipulator (PSM) 	<br>
+> fig2: The schematic of the PSM 			<br>
+> fig3: The simplified model of the PSM	 	<br> 
+
+
+<br>
+---
 ## Demo 1 - Position Control of a single PSM in AMBF simulator
 <figure>
     <img src="media/3_demo_IK_ambf.gi" height="360" width="672">
@@ -37,30 +62,7 @@
 
 
 ---
-## Overview
-#### Introduction
-This project is based on the da Vinci Reasearch Kit (dVRK), an open-source surgical robotic platform. The aim of this project is to derive the complete dynamic model for the Patient Side Manipulator (PSM) of the dVRK and then calculate the inverse dynamics of the system to move it from a given start pose to a goal pose. Further, to verify the dynamic model and the calculated inverse dynamics, our model was used to simulate the PSM on the Asynchronous Multi-Body Framework (AMBF), developed by the AIM lab at WPI.
-
-<figure>
-    <img src="media/1_dVRK.png" height="240" width="320">
-</figure>
-
-> fig1: The daVinci Research Kit (dVRK)		<br>
-
-<br>
-The schematic of the PSM and simplified model used for assigning the joint frames and link frames for carrying out our analysis is shown below:
-
-<p float="left">
-  <img src="media/2_PSM_schematic.png" height="180" width="430" />
-  <img src="media/2_PSM_model.jpeg" height="180" width="270" /> 
-</p>
-
-> fig1: The Patient Side Manipulator (PSM) 	<br>
-> fig2: The schematic of the PSM 			<br>
-> fig3: The simplified model of the PSM	 	<br> 
-
-
-#### Contributions
+## Contributions
 This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. The team was comprised of 4 people and our contributions are described below:
 - Emmanuel Jayaraju	: formal analysis, matlab development, python script development
 - Aditya Mehrotra	: formal analysis, matlab development, inertia generation on blender
@@ -70,7 +72,6 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 
 
 
-<br><br>
 ---
 ## Scripts 
 
@@ -92,8 +93,6 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 
 
 
-
-<br><br>
 ---
 ## Usage
 
@@ -132,8 +131,6 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 	$ cd <this_repository_path>/scripts
 	$ python3 psm_full.py
 	```
-<br><br>
-	
 	
 	
 	
@@ -143,6 +140,7 @@ This is a group project done for the course, "RBE501 - Robot Dynamics" at WPI. T
 ## Future Work 
 
 It is our plan to port all our work from MATLAB to C++ to perform torque control of the PSM on AMBF simulator. We plan to remove the dependency on MATLAB for dynamics computations and use the **Rigid Body Dynamics Library (RBDL)** C++ open source library to compute the dynamics. The link for this library is [https://github.com/ORB-HD/rbdl-orb](https://github.com/ORB-HD/rbdl-orb). 
+
 
 
 ---
