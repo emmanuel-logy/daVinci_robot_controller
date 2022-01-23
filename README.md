@@ -27,7 +27,7 @@ The schematic of the PSM and simplified model used for assigning the joint frame
 ---
 ## Demo 1 - Position Control of a single PSM in AMBF simulator
 <figure>
-    <img src="media/3_demo_IK_ambf.gi" height="360" width="672">
+    <img src="media/3_demo_IK_ambf.gif" height="360" width="672">
     <figcaption><i>The PSM tracking a circle trajectory using position controller</i></figcaption>
 </figure>
 
