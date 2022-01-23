@@ -46,11 +46,12 @@ This project is based on the da Vinci Reasearch Kit (dVRK), an open-source surgi
     <figcaption><i>The daVinci Research Kit (dVRK) </i></figcaption>
 </figure>
 
+<br>
 The schematic of the PSM and simplified model used for assigning the joint frames and link frames for carrying out our analysis is shown below:
 
 <p float="left">
-  <img src="media/2_PSM_schematic.png" height="240" width="580" />
-  <img src="media/2_PSM_model.jpeg" height="240" width="360" /> 
+  <img src="media/2_PSM_schematic.png" height="144" width="350" />
+  <img src="media/2_PSM_model.jpeg" height="144" width="216" /> 
 </p>
 
 > fig1: The Patient Side Manipulator (PSM) 	<br>
